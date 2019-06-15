@@ -1,33 +1,27 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 40px;
+  min-height: calc(100vh - 80px);
 }
 
-.App-link {
-  color: #61dafb;
+/* className's left and right were added later on into the app.js, because for this 
+exercise it required you to do the changes to SPLIT from APP.JS file. Now, if we check the browser webpage now, nothing has changed! 
+The styles didn't work. We need to make the Split component configurable! 
+We need to make the Split component understand the new classNames. 
+
+When we make custom components, 
+they won't use any className props their parent gives them unless we explicitly add that feature to our custom component.
+
+Inside the Split component, add code to read the props and create a new, combined className.
+The combinedClassName includes the hardcoded split class and the className passed in as a prop (either right or left in this case).
+*/
+
+.left {
+  background-color: darkslategray;
+  color: azure;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right {
+  background-color: wheat;
+  color: firebrick;
 }
