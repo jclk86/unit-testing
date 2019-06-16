@@ -3,8 +3,14 @@ import ReactDOM from "react-dom"; // On the left-hand side of the "from" we have
 import App from "./App"; // Relative imports. Dot and forward slash tell JavaScript to look "relative" to the current file rather than looking inside the node_modules directory.
 // Relative imports require us as developers to specify both the import and the export.
 import "./index.css";
+import HelloWorld from "./state-drills/HelloWorld";
+import Bomb from "./state-drills/Bomb";
+import RouletteGun from "./state-drills/RouletteGun";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<App />, document.getElementById("root"));
+// ReactDOM.render(<HelloWorld />, document.getElementById("root"));
+// ReactDOM.render(<Bomb />, document.getElementById("root"));
+ReactDOM.render(<RouletteGun />, document.getElementById("root"));
 
 // About JSX
 // Whenever you create some JSX, Babel transforms it into a function call.
